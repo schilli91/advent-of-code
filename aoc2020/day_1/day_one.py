@@ -12,7 +12,7 @@ def fix_expense_report(expense_report, num_summand):
 def fix_expense_report_two_summands(expense_report):
     for i in expense_report:
         for j in expense_report:
-            if (i + j == 2020):
+            if i + j == 2020:
                 return i * j
 
     return False

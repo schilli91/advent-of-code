@@ -36,7 +36,7 @@ def test_validate_score():
     assert False == validate_score(preamble, 100)
     assert False == validate_score(preamble, 50)
 
-    preamble[0] = 45
+    preamble[19] = 45
     assert True == validate_score(preamble, 26)
     assert True == validate_score(preamble, 64)
     assert True == validate_score(preamble, 66)

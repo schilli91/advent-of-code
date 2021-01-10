@@ -1,6 +1,6 @@
 import pytest
 
-from aoc2020.day_9.day_nine import find_invalid_score, validate_score
+from aoc2020.day_9.day_nine import find_invalid_score, validate_score, find_weakness
 
 sample_xmas_data = """35
 20
@@ -42,6 +42,10 @@ def test_validate_score():
     assert True == validate_score(preamble, 66)
 
     assert False == validate_score(preamble, 65)
+
+
+def test_find_weakness():
+    assert 62 == find_weakness(sample_xmas_data, 127)
 
 
 if __name__ == '__main__':

@@ -25,7 +25,7 @@ sample_xmas_data = """35
 
 
 def test_find_invalid_score():
-    assert 127 == find_invalid_score(sample_xmas_data)
+    assert 127 == find_invalid_score(sample_xmas_data, 5)
 
 
 def test_validate_score():

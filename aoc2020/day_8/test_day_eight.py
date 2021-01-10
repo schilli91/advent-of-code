@@ -16,8 +16,10 @@ acc +6"""
 def test_run_boot_code():
     assert 5 == run_boot_code(sample_boot_code)
 
+
 def test_fix_boot_code():
     assert 8 == fix_boot_code(sample_boot_code)
+
 
 if __name__ == '__main__':
     print("Day 8")
